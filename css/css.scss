@@ -11,6 +11,10 @@ html{
 }
 body{
     font-family: "Poppins", sans-serif;
+    color: $text-color;
+    margin-bottom: 10rem;
+    line-height: 3rem;
+
 }
 .wrapper{
     max-width: 1440px;
@@ -64,4 +68,104 @@ body{
     display:inline-block;
     padding: 1.5rem 2.5rem;
 
+}
+
+
+.banner{
+   padding-top: 15rem;
+   max-width: 80rem;
+    margin:0 auto;
+    text-align:center;
+    &__heading{
+        font-size: 6rem;
+        font-weight:700;
+    }
+    &__desc{
+        font-size:2.5rem;
+        margin:4rem 1rem;
+    }
+
+}
+.button{
+    width:17rem;
+    padding: 1.5rem 2.5rem;
+    border: 1px solid;
+    border-radius: 2.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    outline:none;
+    font-size:1.6rem;
+    display: inline-block;
+    &__primary--color{
+        background-color:$primary-color;
+        border-color: $primary-color;
+    }
+}
+.categories{
+    padding-top: 10rem;
+    &__inner{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+
+    }
+    &__card{
+        margin: 2rem;
+        border: 1px solid #ffc87a;  
+        border-radius: 2.5rem;
+
+    }
+    &__card--container{
+        margin:3rem;
+    }
+    &__card--image{
+        border-radius: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    &__title{
+        margin-bottom: 2rem;
+
+    }
+    &__desc{
+        font-size: 1.5rem;
+    }
+}
+h2{
+    font-size:2.6rem;
+    font-weight:700;
+}
+
+.features{
+    margin-top: 10rem;
+    font-size: 1.5rem;
+    &__item{
+        display: flex;
+    }
+    &__item>div{
+        width: 50%;
+    }
+    &__image>img{
+        border-radius: 5rem;
+        width:100%;
+        height:auto;
+    }
+    &__detail--container{
+        margin: 7rem;
+    }
+    &__detail--container>h2{
+        line-height:5rem;
+        margin-bottom: 4rem;
+    }
+    &__desc{
+        margin-bottom: 4rem;
+    }
+    &__detail--list>li{
+        text-decoration: underline;
+        margin-bottom: 3rem;
+    }
+    
+}
+h3{
+    font-size:1.7rem;
+    font-weight:700;
 }
