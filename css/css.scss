@@ -77,18 +77,28 @@ body{
    max-width: 80rem;
     margin:0 auto;
     text-align:center;
+    &__title{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
     &__heading{
         font-size: 6rem;
         font-weight:700;
     }
     &__desc{
         font-size:2.5rem;
-        margin:4rem 1rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+    &__button>button{
+        width: 13rem;
     }
 
 }
 .button{
-    width:17rem;
+    min-width: 11rem;;
     padding: 1.5rem 2.5rem;
     border: 1px solid;
     border-radius: 2.5rem;
@@ -97,9 +107,13 @@ body{
     outline:none;
     font-size:1.6rem;
     display: inline-block;
+    background-color: white;
+
     &__primary--color{
         background-color:$primary-color;
         border-color: $primary-color;
+        box-shadow:0px 10px 50px -3px $primary-color;
+
     }
 }
 .categories{
@@ -112,8 +126,8 @@ body{
     }
     &__card{
         margin: 2rem;
-        border: 1px solid #ffc87a;  
         border-radius: 2.5rem;
+        box-shadow: 0px 50px 50px -3px #fca2d6;
 
     }
     &__card--container{
@@ -132,7 +146,7 @@ body{
     }
 }
 h2{
-    font-size:2.6rem;
+    font-size:4rem;
     font-weight:700;
 }
 
@@ -167,12 +181,20 @@ h2{
     
 }
 h3{
-    font-size:1.7rem;
+    font-size:2.5rem;
     font-weight:700;
+}
+h4{
+    font-size:1.8rem;
+    font-weight: 700;
 }
 .partner{
   margin-top: 10rem;
   text-align: center;
+  &__inner>p{
+    font-size:2.7rem;
+    font-weight: 700;
+  }
   &__line{
       margin-top:5rem;
      height:0.3rem;
@@ -193,6 +215,9 @@ h3{
     &__title{
         text-align: center;
     }
+    &__title>h2{
+        margin-bottom: 4rem;
+    }
     &__tag{
         color: $primary-color;
     }
@@ -204,9 +229,7 @@ h3{
         margin-right: 2rem;
         border-radius: 2.5rem;
     }
-    &__inner>h2{
-        margin-bottom: 2rem;
-    }
+   
     &__subc{
         display: flex;
         justify-content: center;
@@ -216,19 +239,48 @@ h3{
     &__subc>div{
         width: 50%;
     }
+    &__subc--title>p{
+        font-size:2.7rem;
+        font-weight: 700;
+    }
     &__link--list{
         display: flex;
     }
     &__link--list>li{
         margin-top: 5rem;
-        margin-left: 2rem;
+        margin-left: 3rem;
+    }
+    &__link--list>li>i{
+        font-size:3rem;
     }
     &__mail--input{
-        background-color: rgb(240, 232, 232);
-        border: none;
-        width: 100%;
+        background-color: transparent;
+        border:0;
+        outline: none;
         height: 5rem;
+        font-size:1.4rem;
+        font-family: "Poppins", sans-serif;
+    }
+    &__mail--input::placeholder{
+        padding-left: 2rem;
+    }
+
+    &__mail{
         position: relative;
+        background-color: rgb(245, 245, 245);
+    }
+    &__mail--button{
+        font-size:1.4rem;
+        font-weight: 700;
+        font-family: "Poppins", sans-serif;
+        color: $text-color;
+        position: absolute;
+        outline: none;
+        border:none;
+        right: 1rem;
+        cursor: pointer;
+        background-color: rgb(245, 245, 245);
+        padding: 1.5rem 2.5rem;
     }
  
 }
@@ -240,8 +292,8 @@ h3{
     }
     &__link--wrapper{
         margin-right: 5rem;
-        font-size:1.5rem;
-        font-weight:700;
+        font-size:1.7rem;
+        font-weight:600;
     }
     &__line{
         height:0.3rem;
@@ -252,6 +304,7 @@ h3{
 
 
 .term{
+    font-size:1.3rem;
     margin-top: 10rem;
     &__line{
         height:0.1rem;
