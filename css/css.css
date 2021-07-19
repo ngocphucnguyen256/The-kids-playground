@@ -15,8 +15,8 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   color: #1a2b5f;
-  margin-bottom: 10rem;
   line-height: 3rem;
+  margin-bottom: 3rem;
 }
 
 .wrapper {
@@ -168,6 +168,7 @@ body {
 .categories__card--image {
   border-radius: 2.5rem;
   margin-bottom: 2rem;
+  width: 100%;
 }
 
 .categories__title {
@@ -176,6 +177,10 @@ body {
 
 .categories__desc {
   font-size: 1.5rem;
+}
+
+.categories__desc > i {
+  margin-left: 1rem;
 }
 
 h2 {
@@ -264,6 +269,10 @@ h4 {
   margin: 4rem;
 }
 
+.partner__list > li > img {
+  width: 100%;
+}
+
 .connect {
   margin-top: 10rem;
 }
@@ -286,9 +295,13 @@ h4 {
   display: flex;
 }
 
-.connect__image--wrapper > img {
+.connect__image--wrapper > div {
   margin-top: 5rem;
   margin-right: 2rem;
+}
+
+.connect__image--wrapper > div > img {
+  width: 100%;
   border-radius: 2.5rem;
 }
 
@@ -411,5 +424,17 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 50rem) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media only screen and (max-width: 50rem) and (max-width: 32rem) {
+  html {
+    font-size: 20%;
+  }
 }
 /*# sourceMappingURL=css.css.map */
